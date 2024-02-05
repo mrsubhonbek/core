@@ -1,13 +1,11 @@
-import { Button } from "@/shared/ui/button";
-import { PrismaClient } from "@prisma/client";
-const db = new PrismaClient();
+import { CoursesList } from "@/features/courses-list/pub/courses-list";
+import { CreateCourseForm } from "@/features/courses-list/pub/create-course-form";
 
 export default async function Home() {
-  const course = await db.course.findMany();
-  console.log(course);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Button>test</Button>
+    <main className="container flex flex-col min-h-screen py-10 items-center">
+      <CreateCourseForm revalidatePagePath="/" className="min-w-80 mb-10" />
+      <CoursesList revalidatePagePath="/" />
     </main>
   );
 }
