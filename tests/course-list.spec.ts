@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test("create & delete course", async ({ page }) => {
-  await page.goto("http://localhost:3000/");
+  await page.goto("/");
   await page.getByPlaceholder("name...").click();
   await page.getByPlaceholder("name...").fill("name");
   await page.getByPlaceholder("description...").click();
