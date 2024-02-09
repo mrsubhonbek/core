@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { LogOut, User } from "lucide-react";
+
 import { Avatar, AvatarFallback } from "@/shared/ui/avatar";
 import { Button } from "@/shared/ui/button";
 import {
@@ -9,8 +12,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/shared/ui/dropdown-menu";
-import { LogOut, User } from "lucide-react";
-import Link from "next/link";
 
 export function Profile() {
   return (
