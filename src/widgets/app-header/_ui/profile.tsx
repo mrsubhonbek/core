@@ -19,14 +19,14 @@ export function Profile() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="p-px rounded-full self-center h-8 w-8"
+          className="p-px rounded-full self-center h-10 w-10"
         >
           <Avatar>
             <AvatarFallback>AS</AvatarFallback>
           </Avatar>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56 mr-2 ">
+      <DropdownMenuContent className="w-56" align="end">
         <DropdownMenuLabel>
           <p>My account</p>
           <p className="text-xs text-muted-foreground overflow-hidden text-ellipsis">
